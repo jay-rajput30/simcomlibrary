@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simcom library</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1>Simcom library</h1>
+
+    <!-- Alerts -->
+    <h2>Alerts</h2>
+    <section class="main--section">
+      <div class="alert primary--alert">
+        <p>this is primary alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <div class="alert secondary--alert">
+        <p>this is secondary alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <div class="alert success--alert">
+        <p>this is success alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <div class="alert danger--alert">
+        <p>this is danger alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <div class="alert info--alert">
+        <p>this is info alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <div class="alert light--alert">
+        <p>this is light alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <div class="alert dark--alert">
+        <p>this is dark alert</p>
+        <button class="alert--button">X</button>
+      </div>
+      <!-- <p class="alert secondary--alert">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem
+        porro nulla alias vero repellendus.
+      </p>
+      <p class="alert success--alert">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem
+        porro nulla alias vero repellendus.
+      </p>
+      <p class="alert danger--alert">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem
+        porro nulla alias vero repellendus.
+      </p>
+      <p class="alert info--alert">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem
+        porro nulla alias vero repellendus.
+      </p>
+      <p class="alert light--alert">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem
+        porro nulla alias vero repellendus.
+      </p>
+      <p class="alert dark--alert">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quidem
+        porro nulla alias vero repellendus.
+      </p> -->
+    </section>
+
+    <h2>sections</h2>
+    <section class="main--section">
+      <!-- primary and alternate section -->
+      <section class="primary--section text--color__primary">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ipsam
+          impedit nemo dignissimos quisquam quia labore rem. Nobis sint aut non
+          illo doloribus tempora aperiam odit labore? Quae, dignissimos id.
+        </p>
+      </section>
+      <section class="alternate--section text--color__secondary">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ipsam
+          impedit nemo dignissimos quisquam quia labore rem. Nobis sint aut non
+          illo doloribus tempora aperiam odit labore? Quae, dignissimos id.
+        </p>
+      </section>
+    </section>
+
+    <!-- avatars class="main--section"-->
+    <h2>avatars</h2>
+    <section class="main--section avatar-section">
+      <figure>
+        <img
+          class="avatar avatar--small"
+          src="https://thispersondoesnotexist.com/image"
+        />
+        <img
+          class="avatar avatar--medium"
+          src="https://thispersondoesnotexist.com/image"
+        />
+        <img
+          class="avatar avatar--large"
+          src="https://thispersondoesnotexist.com/image"
+        />
+        <div class="avatar--badge--container">
+          <img
+            class="avatar avatar--small"
+            src="https://thispersondoesnotexist.com/image"
+          />
+          <span class="avatar--badge"></span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- badges -->
+    <h2>badges</h2>
+    <section class="main--section">
+      <span class="badge primary--badge">1</span>
+      <span class="badge secondary--badge">new</span>
+      <span class="badge alternate--badge">new</span>
+      <span class="badge dark--badge">new</span>
+
+      <!-- need to figure out icon badge -->
+      <!-- <div class="icon--badge">
+        <img class="icon--badge--avatar" src="https://thispersondoesnotexist.com/image" />
+      </div> -->
+    </section>
+
+    <!-- buttons -->
+    <h2>buttons</h2>
+    <section class="main--section">
+      <button class="button primary--button">primary</button>
+      <button class="button secondary--button">secondary</button>
+      <button class="button icon--text--button">
+        <span>secondary</span> <i class="fa fa-bell"></i>
+      </button>
+
+      <!-- todo: need to figure out best way to implement link button -->
+      <!-- <a class="link--button">link</a> -->
+
+      <div class="icon--badge--button">
+        <i id="icon--badge--icon" class="fa fa-bell"></i>
+        <span id="icon--badge--button--text">1+</span>
+      </div>
+
+      <button class="floating--button">+</button>
+      <i id="icon--button" class="fa fa-shopping-cart"></i>
+    </section>
+    <h2>cards</h2>
+    <section class="main--section">
+      <article class="card">
+        <div class="card--top">
+          <img
+            src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="image of car"
+          />
+          <span class="card--top--text">Lorem, ipsum.</span>
+        </div>
+        <!-- <figure class="card--top"></figure> -->
+        <span class="badge card--badge">new</span>
+        <div class="card--bottom">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.
+          </p>
+          <button class="button primary--button">
+            add to cart <i class="fa fa-bell"></i>
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure class="card--top">
+          <img
+            src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="image of car"
+          />
+        </figure>
+        <button class="card--dismiss">X</button>
+        <div class="card--bottom">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.
+          </p>
+        </div>
+      </article>
+
+      <!-- TODO: on hover grayscale is not working -->
+      <!-- <figure class="card card--overlay">
+        <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of a car"> -->
+      <!-- <div class="card--top"><img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="image of car"></div> -->
+      <!-- <button class="card--dismiss">X</button>
+        <p class="card--overlay__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, ab.</p>
+      </figure> -->
+    </section>
+    <h2>responsive images</h2>
+    <section class="main--section">
+      <figure class="rounded--image">
+        <img
+          src="https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="nature image"
+        />
+      </figure>
+      <figure class="responsive--image">
+        <img
+          src="https://images.unsplash.com/photo-1494253188410-ff0cdea5499e?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="nature image"
+        />
+      </figure>
+    </section>
+
+    <section class="main--section">
+      <input type="text" id="standard--input" class="input standard--input" />
+      <!-- <label class="standard--input--label" for="standard--input">text</label> -->
+      <input type="text" id="filled--input" class="input filled--input" />
+      <!-- <label class="filled--input--label" for="filled--input">text</label> -->
+      <input type="text" id="outline--input" class="input outline--input" />
+      <!-- <label class="outline--input--label" for="outline--input">text</label> -->
+    </section>
+
+    <h2>lists</h2>
+    <section class="main--section">
+      <ul class="standard--list">
+        <li class="standard--list__item">item one
+          <!-- <div class="standard--list--item--header">
+            <div>
+              <img
+                class="avatar avatar--small"
+                src="https://thispersondoesnotexist.com/image"
+              />
+              <span class="text-utility small">1d ago</span>
+            </div>
+            <small class="text-utility disable">SDE</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div> -->
+        </li>
+        <li class="standard--list__item">item two</li>
+        <li class="standard--list__item">item three</li>
+      </ul>
+
+      <ul class="stacked--list">
+        <li class="stacked--list__item">
+          <div class="stacked--list__item--container">
+            <div class="standard--list--item--header">
+              <img
+                class="avatar avatar--small"
+                src="https://thispersondoesnotexist.com/image"
+              />
+              <span class="text-utility small">1d ago</span>
+            </div>
+            <small class="text-utility disable">SDE</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </li>
+        <li class="stacked--list__item">
+          <div class="stacked--list__item--container">
+            <div class="standard--list--item--header">
+              <img
+                class="avatar avatar--small"
+                src="https://thispersondoesnotexist.com/image"
+              />
+              <span class="text-utility small">1d ago</span>
+            </div>
+            <small class="text-utility disable">SDE</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </li>
+        <li class="stacked--list__item">
+          <div class="stacked--list__item--container">
+            <div class="standard--list--item--header">
+              <img
+                class="avatar avatar--small"
+                src="https://thispersondoesnotexist.com/image"
+              />
+              <span class="text-utility small">1d ago</span>
+            </div>
+            <small class="text-utility disable">SDE</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <h2>navigation bar</h2>
+    <section class="main--section">
+      <nav>
+        <h3 class="nav--hero">Hero</h3>
+        <ul class="nav--list">
+          <li class="nav--items"><a href="#">home</a></li>
+          <li class="nav--items"><a href="#">profile</a></li>
+          <li class="nav--items"><a href="#">about</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="main--section">
+      <ul class="rating">
+        <li>
+          <i class="fa fa-star fa-sm"></i>
+        </li>
+        <li>
+          <i class="fa fa-star fa-sm"></i>
+        </li>
+        <li>
+          <i class="fa fa-star fa-sm"></i>
+        </li>
+        <li>
+          <i class="fa fa-star fa-sm"></i>
+        </li>
+        <li>
+          <i class="fa fa-star fa-sm"></i>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main--section">
+      <p class="text-utility heading">this is a heading text</p>
+      <p class="text-utility small">this is small text</p>
+      <p class="text-utility disable">this is disabled text</p>
+      <p class="text-utility center">this is centered text</p>
+    </section>
+  </body>
+</html>
