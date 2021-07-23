@@ -580,14 +580,14 @@ box-shadow:  8px 8px 5px #d6d6d6,
 /* navbar styles */
 .navbar {
   margin: var(--space-2) 0;
-  padding: var(--space-1) var(--space-6) var(--space-1) var(--space-6);
+  padding: var(--space-3);
   background-color: var(--main-color);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 .nav--hero {
   font-family: "Quigley", var(--heading-font);
