@@ -62,7 +62,7 @@ li {
 body {
   font-family: var(--text-font), sans-serif;
   width: 100vw;
-  /* overflow-x: hidden; */
+  overflow: hidden;
 }
 h1,
 h2 {
