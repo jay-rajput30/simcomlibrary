@@ -280,11 +280,11 @@ h6 {
 /* button styles */
 
 .button {
-  /* display: inline-block; */
+  display: inline-block;
   outline: none;
   border: none;
   padding: var(--space-1) var(--space-2);
-  margin: var(--space-2);
+  margin: var(--space-2) auto;
   border-radius: 5px;
   transition: transform 0.3s linear;
 }
@@ -292,16 +292,13 @@ h6 {
   background-color: var(--main-color);
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
-  /* border-radius: 5px;
-background: linear-gradient(145deg, #e6e6e6, #ffffff);
-box-shadow:  8px 8px 5px #d6d6d6,
-             -8px -8px 5px #ffffff; */
 }
 
 .secondary--button {
   background-color: var(--secondary-color);
   color: var(--main-color);
   border: 2px solid var(--main-color);
+  padding: 0.38rem 1rem;
 }
 
 .button:active {
@@ -369,7 +366,6 @@ box-shadow:  8px 8px 5px #d6d6d6,
   margin: var(--space-4);
   transition: transform 0.3s linear;
   position: relative;
-  /* box-shadow: 3px 3px 12px 4px #251f6d; */
   border-radius: 50%;
   color: var(--secondary-color);
   font-size: 3rem;
@@ -382,9 +378,7 @@ box-shadow:  8px 8px 5px #d6d6d6,
   display: inline-block;
   position: relative;
   border-radius: 5px;
-  margin: var(--space-2);
-  width: 250px;
-  /* height: 300px; */
+  width: 220px;
   background-color: var(--secondary-color);
 }
 
@@ -407,8 +401,6 @@ box-shadow:  8px 8px 5px #d6d6d6,
 }
 
 .card--bottom {
-  /* height: 20%; */
-  /* border: 2px solid red; */
   padding: var(--space-2);
   display: flex;
   flex-direction: column;
@@ -437,7 +429,6 @@ box-shadow:  8px 8px 5px #d6d6d6,
 }
 
 .card--overlay {
-  /* padding: var(--space-2); */
   height: 300px;
   width: 15rem;
   display: flex;
@@ -462,9 +453,6 @@ box-shadow:  8px 8px 5px #d6d6d6,
 .card--text--only {
   color: var(--main-color);
   border: 2px solid var(--main-color);
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   padding: var(--space-1);
   box-shadow: 5px 5px 14px 2px var(--main-color);
 }
@@ -614,7 +602,6 @@ box-shadow:  8px 8px 5px #d6d6d6,
 }
 
 .nav--items:hover a {
-  /* border-bottom: 2px solid var(--secondary-color); */
   font-size: 1.1rem;
   font-weight: 800;
 }
@@ -627,7 +614,6 @@ box-shadow:  8px 8px 5px #d6d6d6,
 }
 .fa-star {
   color: var(--secondary-color);
-  /* outline: 1px solid var(--main-color); */
 }
 
 .fa-star:hover {
